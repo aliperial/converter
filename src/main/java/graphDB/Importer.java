@@ -1,12 +1,12 @@
+package graphDB;
+
 import com.google.gson.Gson;
 import com.google.gson.JsonElement;
 import com.google.gson.JsonObject;
 import com.google.gson.JsonParser;
 import org.apache.commons.lang.math.NumberUtils;
 
-import java.io.BufferedWriter;
 import java.math.BigDecimal;
-import java.nio.file.Path;
 import java.sql.*;
 import java.util.*;
 import java.util.regex.Matcher;

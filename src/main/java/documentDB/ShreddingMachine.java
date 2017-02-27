@@ -1,4 +1,4 @@
-package ocean;
+package documentDB;
 
 import com.google.gson.*;
 import java.lang.reflect.Type;
@@ -11,7 +11,7 @@ import java.util.concurrent.TimeUnit;
 /**
  * Created by ali on 27/02/17.
  */
-public class fixer {
+public class ShreddingMachine {
     public static final String ARRAY_FIELD_NAME = "products"/*"parameter"*/;
     public static final String TABLE_NAME = "oceandata"/*"stations"*/;
     public static final String TARGET_TABLE_NAME = TABLE_NAME + "_" + ARRAY_FIELD_NAME;
@@ -22,7 +22,7 @@ public class fixer {
             Gson gson = new Gson();
             Class.forName("org.postgresql.Driver");
             c = DriverManager
-                    .getConnection("jdbc:postgresql://146.169.46.53:5432/ocean",
+                    .getConnection("jdbc:postgresql://146.169.46.53:5432/documentDB",
                             "postgres", "thomasandme");
             System.out.println("Opened database successfully");
 

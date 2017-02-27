@@ -1,3 +1,5 @@
+package graphDB;
+
 import com.google.gson.JsonObject;
 
 /**
